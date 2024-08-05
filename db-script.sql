@@ -21,3 +21,9 @@ INSERT INTO contact (contact, employee_id) VALUES ('011-1234658', 'E001'),
                                                   ('011-1234777', 'E002'),
                                                   ('071-1234777', 'E002'),
                                                   ('076-1234777', 'E003');
+
+CREATE TABLE enrollment(
+    student_id VARCHAR(10) NOT NULL REFERENCES student(id),
+    batch_number VARCHAR(10) NOT NULL REFERENCES batch(number),
+    registered_date DATE NOT NULL
+);

@@ -1,0 +1,1 @@
+INSERT INTO customer (id, name, address) ('C001','asas','asasas')
